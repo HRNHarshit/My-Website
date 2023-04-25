@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: rgb(180, 180, 180);
+  /* width: 15vw; */
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  font-weight: bold;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+}
+
+.sidebar nav {
+  padding: 30px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 18px;
+  padding: 25px 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 85vw;
+
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  /* background-color: green; */
+  height: 60vh;
+  width: 100vw;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+}
+
+.devInfo div {
+  margin: 5px 0;
+}
+
+.hello {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 2rem;
+}
+
+.moreAbout {
+  font-size: 1rem;
+  margin: 20px 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 6px 15px;
+  margin: 10px 0px;
+}
+
+.btn:hover {
+  color: dodgerblue;
+  background-color: white;
+}
+
+.devPic img {
+  height: 60vh;
+}
+
+.contactForm {
+  padding: 0 40px;
+  padding-top: 70px;
+  margin: 0 30px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.contactForm h1 {
+  font-family: "Source Code Pro", monospace;
+  padding: 12px 0;
+  margin: 0;
+}
+
+.contactForm form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.contactForm form div input{
+  width: 25vw;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 2px 0 0 0;
+  padding: 3px;
+}
+
+#emailHelp {
+  color: midnightblue;
+  font-size: 10px;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+
+#form-check {
+ flex-direction: row;
+}
+
+#form-check input {
+  width: 20px;
+  margin: 3px 0;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px;
+}
+
+.intro {
+  margin: 75px 30px;
+}
+
+.intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 10px 15px;
+}
+
+.intro p {
+  font-family: "Source Code Pro", monospace; 
+  margin: 10px 40px 40px;
+}
+
+.intro a {
+  color: brown;
+  text-decoration: underline;
+}
+
+.skillContainer {
+  margin: 12px 40px 40px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Source Code Pro", monospace; 
+}
+
+.skill {
+  height: 5px;
+  width: 300px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.hundred {
+  width: 300px;
+  background-color: #ff0000;
+}
+
+.seventy-five {
+  width: 200px;
+  background-color: #ffa300;
+}
+
+.fifty {
+  width: 100px;
+  background-color: #a3ff00;
+}
+
+.coding {
+  font-family: "Fira Sans", sans-serif;
+  margin: 75px 30px;
+}
+
+.coding .heading {
+  color: mediumblue;
+}
+
+.coding .heading a:link, a:visited{
+  text-decoration: none;
+  color: chocolate;
+}
+
+.coding .content {
+  font-family: "Source Code Pro", monospace; 
+}
+
+.coding h2 {
+  margin: 10px 15px;
+}
+
+.coding div {
+  margin: 10px 40px 40px;
+}
+
+.coding ul li {
+  list-style: none;
+}
+
+.websiteNo ul {
+  margin: 3px 25px
+}
+
+.websiteNo ul li{
+  list-style: disc;
+}
+
+.myProject {
+  margin: 0 40px;
+}
+
+.myProject ul li{
+  list-style: none;
+}
+
+.projectNo, .websiteNo {
+  margin: 20px 0;
+}
+
+.projectNo ul {
+  margin: 3px 25px;
+}
+
+.projectNo ul li {
+  list-style: disc;
+}
+
+.sidebarGo {
+  transform: translate(-400px, 0);
+  position: absolute;
+}
+
+.humburger {
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+  top: 10px;
+}
+
+.cross {
+  margin-left: 160px;
+}
+
+@media (max-width: 1200px) {
+  /* *{
+    background-color: rgb(235, 81, 81);
+  }
+  .main {
+    transform: translate(0);
+  }  */
+  .devPic {
+    display: none;
+  }
+  .intro, .coding, .contactForm {
+    margin: 50px 8px;
+  }
+}
